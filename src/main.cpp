@@ -4,10 +4,9 @@
 
 int main() {
 
-somme somme1();
-somme1.calcul(1,4);
+calcul first;
 
-std::cout<<"Hello"<<std::endl;
+std::cout<<first.somme(63,898)<<std::endl;
 
 return 0;
 

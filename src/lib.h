@@ -1,8 +1,8 @@
 #pragma once
 
-class somme
+class calcul
 {
 public:
-	int calcul(int nb1, int nb2);
+	int somme(int nb1, int nb2);
 };
 
