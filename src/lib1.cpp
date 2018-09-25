@@ -1,17 +1,19 @@
-#include "lib.h"
+#include "lib1.h"
+#include <iomanip>
+#include <sstream>
 #include <ctime>
+#include <time.h>
+#include <string>
 
-char ecole::date(){
+using namespace std;
 
-time_t temps;
-struct tm datetime;
-char format[32];
+string ecole::date(){
 
-time(&temps);
-datetime = *localtime(&temps);
+time_t now = time(NULL);
 
-strfrtime(format, 32,"%Y%m%d %H%M", &datetime);
+string realtime = asctime(localtime(&now));
 
-return << format <<endl;
+return realtime;
 
-}
+
+};
